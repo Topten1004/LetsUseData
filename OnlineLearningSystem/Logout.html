@@ -1,0 +1,70 @@
+﻿<!----------------------- start navbar ----------------------->
+<section class="header d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar wow fadeInDown navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="nav-area-logo">
+                            <a href="CourseSelection.html">
+                                <img src="Content/images/lets-use-data-logo.svg" width="200" />
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-toggle">
+                            <ul class="navbar-nav  ml-auto">
+                                <li class="nav-item">
+                                    <a style="visibility:hidden" class="nav-link" id="btnHome" onclick="CourseList()" href="#">Courses <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="btnCourse" onclick="Home()" href="#">Course <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="btnWeek" onclick="Week()" href="#">Module <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="btnCalendar" onclick="Calendar()" href="#">Calendar <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="btnComment" onclick="Feedback()" href="#">Feedback <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="btnContact" onclick="Contact()" href="#">Contact <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="navlinks_divider d-none d-lg-block" />
+                        <ul class="navbar-nav pull-right">
+                            <li class="dropdown d-flex align-items-center">
+                                <p class="user-name mr-4 d-none d-lg-block" id="top-bar-student-name"></p>
+                                <a class="dropdown-toggle caret-none user-image" data-toggle="dropdown"><img id="user-profile-image" src="Content/images/photo.jpg" /></a>
+                                <ul class="dropdown-menu user-dropdown">
+                                    <li>
+                                        <p class="user-name d-lg-none d-md-block">Student Name</p>
+                                    </li>
+                                    <li><div class="dropdown-divider d-lg-none d-md-block"></div></li>
+                                    <li>
+                                        <a class="dropdown-item" id="ButtonUpdateProfile" href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                                    </li>
+                                    <li><div class="dropdown-divider"></div></li>
+                                    <li>
+                                        <a class="dropdown-item" id="btnLogout" href="LoggedOut.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------- end navbar ----------------------->
+<!-------------- Logout js -------------->
+<script type="text/javascript" src="/PageScripts/Logout.js"></script>
+<!-------------- internal script -------------->
+<script type="text/javascript">
+    checkUser();
+</script>
